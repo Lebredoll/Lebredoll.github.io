@@ -1,0 +1,188 @@
+/* Configurações básicas */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000;
+	color: #fff;
+  background-image: url('i/denim2.png');
+  image-rendering: pixelated;
+  
+}
+
+/* Cabeçalho */
+header {
+  
+	background-color: #ff0000;
+	padding: 15px;
+	text-align: center;
+}
+
+header{
+	background-image: url('i/galhos2.png'); /* Caminho para a imagem */
+	background-size: 2000px; /* Ajusta o tamanho da imagem */
+	background-position: center; /* Centraliza a imagem */
+	background-repeat: no-repeat; /* Evita repetição da imagem */
+	padding: 15px;
+	text-align: center;
+	width: 2000px;
+}
+header h1 {
+	color: #ffffff;
+	font-size: 6rem;
+	font-family: "PT Serif", serif; /* Altere para uma fonte pontuda */
+	letter-spacing: 10px;
+	
+}
+
+
+
+
+nav {
+	border: 1px;
+	border-top-color: #000000;
+	margin-top: 0px;
+	font-size: 1.4rem;
+	/* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+  padding: 2px;
+}
+
+nav a {
+	color: #ff0000;
+	font-size: 1.1rem;
+	text-decoration: none;
+	margin: 0 15px;
+	font-family: "PT Serif", serif;
+	border: 1px;
+	border-top-color: #000;
+	font-size: 1.3rem;
+    border-radius: 6px;
+}
+nav a:hover{
+background-color: #555;
+
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+.post-container {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 10px;
+  }
+
+  .post-item  p{
+    margin-bottom: 20px;
+  }
+  
+  .post-image {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 5px;
+    cursor: cell; /* Cursor indica que a imagem é clicável */
+    transition:  ease-in-out; /* Suaviza a transição de aumento */
+  }
+
+  .post-image:active{
+    transform: scale(1.5); /* Aumenta a imagem ao ser clicada */
+
+  }
+  
+  .small-icon {
+    margin-top: 10px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    cursor: cell; /* Cursor indica que a imagem é clicável */
+    transition:  ease-in-out; /* Suaviza a transição de aumento */
+  }
+  
+  .small-icon:active{
+    transform: scale(1.5);
+    border-radius: 50%;
+    width: 300px;
+  }
+
+  .caption {
+    font-size: 1.4rem;
+    color: #ccc;
+   
+  }
+  
+  /* Estilização da imagem lateral */
+  .side-image {
+    position: fixed;
+    bottom: 0;
+    right: -100;
+    max-height: 80vh;
+    animation: slideUp 3s ease-in-out forwards;
+    z-index: -1;
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .side-image2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-height: 80vh;
+    animation: slideUp2 3s ease-in-out forwards;
+    z-index: -1;
+  }
+  
+  @keyframes slideUp2 {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Estilização da seção de comentários */
+  .comments-section {
+    background-color: #222;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .comments-section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  .comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .comment p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+    text-align: left;
+  }
